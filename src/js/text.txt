@@ -1,0 +1,30 @@
+<form data-id="add-data">
+    <label for="price-input">Введите сумму</label>
+    <input id="price-input" data-id="price" placeholder="Сумма">
+    <label for="category-input">Введите категорию</label>
+    <input id="category-input" data-id="category" placeholder="Категория"1gi>
+    <button data-action="add">Добавить</button>
+</form>
+<div>
+    <button data-action="no-sort">Нет сортировки</button>
+    <button data-action="sort-by-price-desc">По цене (убывание)</button>
+    <button data-action="sort-by-price-asc">По цене (возрастание)</button>
+</div>
+<ul data-id="purchases-list"></ul>
+<div data-id="show-sum">
+    <br> 
+    <b><label for="total-sum">Общяя сумма:</label></b>
+    <span id="total-sum" data-id="sum">0</span>
+</div>
+`;
+
+<form data-id="purchase-add-form" class="purchase-add-form">
+    <label for="purchase-input-amount" class="label">Сумма:</label>
+    <input id="purchase-input-amount" data-id="purchase-input-amount" class="input">
+    <label for="purchase-input-category" class="label">Категория:</label>
+    <input id purchase-input-category data-id="purchase-input-category" class="input">
+    <button data-action="purchase-add" class="button">Добавить</button>
+</form>
+<ul data-id="purchases-list" class="purchases-list"></ul>
+<div data-id="purchases-total" class="purchases-total">Общая сумма: 0</div>
+`;

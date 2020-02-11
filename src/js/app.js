@@ -1,6 +1,5 @@
 const rootEl = document.getElementById('root');
-
-rootEl.innerHTML = `
+const rootdom =`
 <form data-id="purchase-add-form" >
 <label for="inp_amount" class="labl">Сумма: </label>
 <input type="text" id="inp_amount" data-id="purchase-input-amount" class="inp"/>
@@ -12,6 +11,8 @@ rootEl.innerHTML = `
 <div data-id="purchases-total" class="purchases-total">Общая сумма: 0</div>
 <button data-action="purchase-dalete-all" class="btn"> dalete</button>
 `
+
+rootEl.innerHTML = rootdom
 const purchaseAddFormEl = rootEl.querySelector('[data-id=purchase-add-form]');
 const purchaseInputAmountEl = purchaseAddFormEl.querySelector('[data-id=purchase-input-amount]');
 const purchaseInputCategoryEl = purchaseAddFormEl.querySelector('[data-id=purchase-input-category]');
@@ -73,18 +74,7 @@ purchaseAddButtonEl.onclick = evt => {
         }
     }
     daleteAllEl.onclick = () =>{
-        rootEl.innerHTML = `
-<form data-id="purchase-add-form" >
-<label for="inp_amount" class="labl">Сумма: </label>
-<input type="text" id="inp_amount" data-id="purchase-input-amount" class="inp"/>
-<label for="inp_category" class="labl">Категория:</label>
-<input type="text" id="inp_category" data-id="purchase-input-category" class="inp" />
-<button class="btn" data-action="purchase-add">Добавить</button>
-</form>
-<ul data-id="purchases-list" class="purchases-list"></ul>
-<div data-id="purchases-total" class="purchases-total">Общая сумма: 0</div>
-<button data-action="purchase-dalete-all"> dalete</button>
-`
+        rootEl.innerHTML = rootdom
     }
 
 
